@@ -1,3 +1,5 @@
+/*jshint loopfunc: true */
+
 module.exports = function(nodeLib) {
 
   var lib = require(nodeLib);
