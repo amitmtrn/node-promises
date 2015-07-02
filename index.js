@@ -1,5 +1,6 @@
 var nodeLib = 'fs';
 var lib = require(nodeLib);
+var Q = require('q');
 
 for (var key in lib) {
   if (key.indexOf('Sync') === -1 &&
@@ -16,8 +17,14 @@ for (var key in lib) {
     (function(key, asyncFunc, callbackIndex) {
       var newKey = key + 'Promise';
       asyncFunc[newKey] = function() {
-        console.log(callbackIndex);
-        asyncFunc[key].apply(this, arguments);
+        var args = Array.prototype.slice.call(arguments);
+        var deferred = Q.defer();
+        args[callbackIndex] = function() {
+          deferred.resolve(arguments);
+        };
+
+        asyncFunc[key].apply(this, args);
+        return deferred.promise;
       };
     }(key, lib, i));
 
@@ -37,6 +44,4 @@ function getParamNames(func) {
   return result;
 }
 
-lib.existsPromise(__filename, function(exists) {
-  console.log(exists);
-});
+lib.existsPromise(__filename).then(function(exists){console.log(exists);});
