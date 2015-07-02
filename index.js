@@ -11,7 +11,7 @@ module.exports = function(nodeLib) {
       var paramsName = getParamNames(lib[key]);
 
       for (var i = 0; i <= paramsName.length; i++) {
-        if (paramsName[i].indexOf('callback') > -1) {
+        if (paramsName[i] && paramsName[i].indexOf('callback') > -1) {
           break;
         }
       }
