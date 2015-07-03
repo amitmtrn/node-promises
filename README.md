@@ -4,7 +4,7 @@ This module add promise version to all node module functions
 
 Example:
 ```js
-var nodePromise = require('./index.js');
+var nodePromise = require('node-promises');
 var fs = nodePromise('fs');
 
 fs.existsPromise(__filename)
