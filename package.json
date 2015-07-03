@@ -1,14 +1,16 @@
 {
   "name": "node-promises",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+  "version": "0.0.1",
+  "description": "This module add promise version to all node module functions",
+  "keywords":["promise"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amitmtrn/node-promises"
   },
-  "author": "",
-  "license": "ISC",
+  "bugs": "https://github.com/amitmtrn/node-promises/issues",
+  "main": "index.js",
+  "author": "Amit Choukroun",
+  "license": "MIT",
   "dependencies": {
     "q": "^1.4.1"
   }
