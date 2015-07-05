@@ -16,5 +16,7 @@ fs.existsPromise(__filename)
 });
 ```
 
+prefer using `spread` instead then
+
 TODO:
 * write tests
