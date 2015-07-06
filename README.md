@@ -8,15 +8,11 @@ var nodePromise = require('node-promises');
 var fs = nodePromise('fs');
 
 fs.existsPromise(__filename)
-.then(function(data) {
-  console.log(data);
+.spread(function(exists) { //exists=true
   return fs.mkdirPromise(__dirname + '/test');
-}).then(function(data) {
-  console.log(data);
+}).spread(function() {
+  // test folder has been created
 });
 ```
 
-prefer using `spread` instead then
-
-TODO:
-* write tests
+> since the promise return the argument array of the callback you should prefer use `spread` instead `then`

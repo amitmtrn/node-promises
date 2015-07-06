@@ -1,8 +1,8 @@
 {
   "name": "node-promises",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "This module add promise version to all node module functions",
-  "keywords":["promise"],
+  "keywords":["promise", "q", "fs"],
   "repository": {
     "type": "git",
     "url": "https://github.com/amitmtrn/node-promises"
