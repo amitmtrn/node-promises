@@ -1,6 +1,6 @@
 {
   "name": "node-promises",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "This module add promise version to all node module functions",
   "keywords":["promise", "q", "fs"],
   "scripts": {
