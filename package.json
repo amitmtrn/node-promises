@@ -3,6 +3,9 @@
   "version": "0.2.0",
   "description": "This module add promise version to all node module functions",
   "keywords":["promise", "q", "fs"],
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/amitmtrn/node-promises"
