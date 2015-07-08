@@ -1,5 +1,12 @@
 # node-promises
 
+
+[![NPM version](https://img.shields.io/npm/v/node-promises.svg)](https://www.npmjs.com/package/node-promises)
+[![Download stats](https://img.shields.io/npm/dm/node-promises.svg)](https://www.npmjs.com/package/node-promises)
+
+[![NPM stats](https://nodei.co/npm/node-promises.svg?downloadRank=true&downloads=true)](https://www.npmjs.org/package/node-promises)
+
+
 This module add promise version to all node module functions
 
 Example:
