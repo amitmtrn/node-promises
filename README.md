@@ -1,5 +1,7 @@
 # node-promises
 
+[![Join the chat at https://gitter.im/amitmtrn/node-promises](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/amitmtrn/node-promises?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 [![NPM version](https://img.shields.io/npm/v/node-promises.svg)](https://www.npmjs.com/package/node-promises)
 [![Download stats](https://img.shields.io/npm/dm/node-promises.svg)](https://www.npmjs.com/package/node-promises)
