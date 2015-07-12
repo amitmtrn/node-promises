@@ -69,4 +69,12 @@ describe('filesystem', function() {
       done();
     });
   });
+
+  it('Should read the dir', function(done) {
+    fs.readdirPromise('./').spread(function(err, files) {
+      expect(files).toContain('index.js');
+      expect(files).toContain('spec');
+      done();
+    });
+  });
 });
