@@ -77,4 +77,17 @@ describe('filesystem', function() {
       done();
     });
   });
+
+  it('Should create file', function(done) {
+    fs.appendFilePromise(rand, 'data to append')
+    .spread(function(err) {
+      if (err) throw err;
+      return fs.existsPromise(rand);
+    })
+    .spread(function(exists) {
+      expect(exists).toBe(true);
+      fs.unlinkSync(rand);
+      done();
+    });
+  });
 });
